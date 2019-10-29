@@ -19,10 +19,10 @@ public class Bullet : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D hit)
     {
-        if (hit.CompareTag("Player") && player.GetComponent<PlayerDamage>().imortal == false)
+        if (hit.gameObject.CompareTag("Player") && player.GetComponent<PlayerDamage>().imortal == false)
         {
             DestroiBala();
-            Destroy(hit.gameObject);
+            hit.gameObject.SetActive(false);
             
         }
     }

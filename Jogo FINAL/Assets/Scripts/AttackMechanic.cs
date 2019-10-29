@@ -63,9 +63,9 @@ public class AttackMechanic : MonoBehaviour
         colisorEsquerda.enabled = false;
 
     }
-    void Deactivate(Collider2D collision)
+    void Deactivate()
     {
-        collision.gameObject.SetActive(false);
+        GameObject.FindWithTag(enemyTag).SetActive(false);
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -96,15 +96,15 @@ public class AttackMechanic : MonoBehaviour
             }
             collision.gameObject.GetComponent<Animator>().enabled = false;
             //collision.gameObject.GetComponent<Rigidbody2D>().isKinematic = true;
-            collision.gameObject.GetComponent<BoxCollider2D>().enabled = false;
+            //collision.gameObject.GetComponent<BoxCollider2D>().enabled = false;
             GameManager.Instance.SfxPlayer(killGuard);
             iTween.PunchScale(collision.gameObject,new Vector2(3,4),1);
-            iTween.PunchPosition(collision.gameObject, new Vector2(1, 2), 3);
+            iTween.PunchPosition(collision.gameObject, iTween.Hash("amount", new Vector2(1, 2), "time", 3, "oncomplete", "Deactivate"));
             iTween.ColorTo(collision.gameObject,new Color(0,0,0,0),.5f);
-
+            GameObject.FindWithTag(enemyTag).SetActive(false);
 
             //Invoke("Deactivate", .5f);
-            Destroy(collision.gameObject,.5f);
+            //Destroy(collision.gameObject,.5f);
         }
         /*if (collision.gameObject.CompareTag(strongerEnemyTag))
         {

@@ -29,7 +29,7 @@ public class EnemyShooter : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        quemAtira.LookAt(posPlayer);
+        //quemAtira.LookAt(posPlayer);
         if (naMira)
         {
             //GameObject atual = ? 

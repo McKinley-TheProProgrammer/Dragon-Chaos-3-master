@@ -57,7 +57,9 @@ public class PlayerMovement : MonoBehaviour
     private void OnCollisionExit2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "Ground_Grass")
+        {
             isOnLand = false;
+        }
     }
 
     /*private void OnTriggerEnter2D(Collider2D collision)
@@ -110,7 +112,7 @@ public class PlayerMovement : MonoBehaviour
         body.velocity = new Vector2(x * velocity, body.velocity.y);
         if ((Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow)) && isOnLand == true)
         {
-            anim.SetTrigger("Jumper");
+            anim.SetBool("Jumping", true);
             GameManager.Instance.SfxPlayer(jumping);
             body.AddForce(new Vector2(0, jumpForce));
         }
