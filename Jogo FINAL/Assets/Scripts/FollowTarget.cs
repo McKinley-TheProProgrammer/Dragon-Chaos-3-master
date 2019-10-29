@@ -89,4 +89,9 @@ public class FollowTarget : MonoBehaviour
         atackscript.TurnColliderOff();
         isAttacking = false;
     }
+
+    public void DeactivateThis()
+    {
+        gameObject.SetActive(false);
+    }
 }

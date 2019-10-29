@@ -42,6 +42,7 @@ public class GameManager : MonoBehaviour
         yield return new WaitForSeconds(1f);
         //SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         PlayerMovement.Instance.gameObject.SetActive(true);
+        
         //CancelInvoke();
     }
     

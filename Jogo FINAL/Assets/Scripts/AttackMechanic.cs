@@ -2,9 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Events;
 
 public class AttackMechanic : MonoBehaviour
 {
+    public UnityEvent flipParticles;
     public AudioClip slash,killGuard;
     public Image barraDeAdrenalina;
     public Animator anim;
@@ -17,10 +19,19 @@ public class AttackMechanic : MonoBehaviour
     int danoSET = 3;
     public ParticleSystem enemyTraces;
     public Pooling traces;
-    
+    Collider2D enemy;
+
     public Vector3 posicoesNegativadas;
     
     bool canAttack;
+
+    /*static AttackMechanic instance;
+    public static AttackMechanic Instance { get { return instance; } }
+    public void Awake()
+    {
+        instance = this;
+    }*/
+
     // Start is called before the first frame update
     void Start()
     {
@@ -63,15 +74,13 @@ public class AttackMechanic : MonoBehaviour
         colisorEsquerda.enabled = false;
 
     }
-    void Deactivate()
-    {
-        GameObject.FindWithTag(enemyTag).SetActive(false);
-    }
+   
     private void OnTriggerEnter2D(Collider2D collision)
     {
 
         if (collision.gameObject.CompareTag(enemyTag))
         {
+            enemy = collision;
             barraDeAdrenalina.fillAmount += 0.08f;
             if (GetComponentInParent<SpriteRenderer>().flipX == false)
             {
@@ -91,18 +100,25 @@ public class AttackMechanic : MonoBehaviour
                     podeUsar.transform.position = transform.position;
                     podeUsar.SetActive(true);
                 }
+                flipParticles.Invoke();
                 //Instantiate(enemyTraces, collision.transform.position, Quaternion.identity);
-                enemyTraces.velocityOverLifetime.x.Equals(-posicoesNegativadas);
+                
             }
             collision.gameObject.GetComponent<Animator>().enabled = false;
             //collision.gameObject.GetComponent<Rigidbody2D>().isKinematic = true;
             //collision.gameObject.GetComponent<BoxCollider2D>().enabled = false;
             GameManager.Instance.SfxPlayer(killGuard);
             iTween.PunchScale(collision.gameObject,new Vector2(3,4),1);
-            iTween.PunchPosition(collision.gameObject, iTween.Hash("amount", new Vector2(1, 2), "time", 3, "oncomplete", "Deactivate"));
+            print(collision.gameObject.GetComponent<Renderer>().material.color);
             iTween.ColorTo(collision.gameObject,new Color(0,0,0,0),.5f);
-            GameObject.FindWithTag(enemyTag).SetActive(false);
+            iTween.PunchPosition(collision.gameObject, iTween.Hash(
+               "amount", new Vector3(1, 2, 0),
+               "time", .35f,
+               "oncomplete", "DeactivateEnemy",
+               "oncompletetarget",gameObject));
 
+            //GameObject.FindWithTag(enemyTag).SetActive(false);
+           
             //Invoke("Deactivate", .5f);
             //Destroy(collision.gameObject,.5f);
         }
@@ -114,6 +130,14 @@ public class AttackMechanic : MonoBehaviour
             if(danoSET <= 0)
                 Destroy(collision.gameObject);
         }*/
+    }
+    void DeactivateEnemy()
+    {
+        Debug.Log("fODASE");
+        //if (enemy != null)
+        //{
+            enemy.GetComponent<FollowTarget>().DeactivateThis();
+       // }
     }
 
 }

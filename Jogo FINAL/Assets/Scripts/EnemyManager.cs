@@ -5,7 +5,7 @@ using UnityEngine;
 public class EnemyManager : MonoBehaviour
 {
     public List<GameObject> enemies =  new List<GameObject>();
-
+    public Transform spawnEnemyPoint, enemyPoint;
     static EnemyManager instance;
     public static EnemyManager Instance { get { return instance; } }
 
@@ -22,9 +22,14 @@ public class EnemyManager : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
-    void Update()
+    public void SetEnemyToSpawn()
     {
-        
+        for (int i = 0; i < enemyPoint.childCount; i++)
+        {
+            //Debug.Log(i);
+            enemyPoint.GetChild(i).position = spawnEnemyPoint.GetChild(i).position;
+            enemyPoint.GetChild(i).gameObject.SetActive(true);
+            enemyPoint.GetChild(i).gameObject.GetComponent<Renderer>().material.color = new Color(255, 255, 255, 255);
+        }
     }
 }
