@@ -25,6 +25,7 @@ public class PlayerDamage : MonoBehaviour
         if (collision.gameObject.CompareTag("ColisionDeath"))
         {
             transform.position = GameManager.Instance.spawnPoint.position;
+            EnemyManager.Instance.SetEnemyToSpawn();
             //gameObject.SetActive(false);
             playerDies.SfxPlayer(death);
             GameObject podeUsar = enemies.GetPooledObject();

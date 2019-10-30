@@ -29,7 +29,7 @@ public class EnemyManager : MonoBehaviour
             //Debug.Log(i);
             enemyPoint.GetChild(i).position = spawnEnemyPoint.GetChild(i).position;
             enemyPoint.GetChild(i).gameObject.SetActive(true);
-            enemyPoint.GetChild(i).gameObject.GetComponent<Renderer>().material.color = new Color(255, 255, 255, 255);
+            enemyPoint.GetChild(i).gameObject.GetComponent<Renderer>().material.color = new Color(1.000f, 1.000f, 1.000f, 1.000f);
         }
     }
 }
