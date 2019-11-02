@@ -74,9 +74,9 @@ MonoBehaviour:
   slashEnemy: {fileID: 8300000, guid: cde923afcac9f7840a1b22f08c7779ab, type: 3}
   isInRangeLeft: 0
   enabledAttack: 0
-  timer: 2
+  timer: 0.9
   posAtaque: {fileID: 1394267730}
-  raioDeAtaque: 1.46
+  raioDeAtaque: 1.79
   colisorDireita: {fileID: 1394267732}
   colisorEsquerda: {fileID: 7583802581306714991}
   enemies:

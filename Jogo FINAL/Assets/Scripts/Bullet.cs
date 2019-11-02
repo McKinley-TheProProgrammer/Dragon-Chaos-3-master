@@ -13,7 +13,7 @@ public class Bullet : MonoBehaviour
 
     private void Start()
     {
-        posPlayer = GameObject.FindWithTag("Player").transform;
+        posPlayer = PlayerMovement.Instance.transform;
 
         alvo = new Vector2(posPlayer.position.x, posPlayer.position.y);
     }
@@ -23,7 +23,7 @@ public class Bullet : MonoBehaviour
         {
             DestroiBala();
             hit.gameObject.SetActive(false);
-            
+            GameManager.Instance.Coroutine();
         }
     }
     // Update is called once per frame

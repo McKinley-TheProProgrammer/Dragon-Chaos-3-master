@@ -10,7 +10,7 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance { get { return instance; } }
     public Transform spawnPoint,enemySpawnPoint;
     public GameObject[] camera;
-
+    public GameObject enemy;
 
     private void Awake()
     {
@@ -21,6 +21,10 @@ public class GameManager : MonoBehaviour
     {
         StartCoroutine(Destroyed());
 
+    }
+    public void StartRespawningMobs()
+    {
+        StartCoroutine(RespawningMobs());
     }
     public void SfxPlayer(AudioClip sfx)
     {
@@ -45,7 +49,14 @@ public class GameManager : MonoBehaviour
         
         //CancelInvoke();
     }
-    
+    IEnumerator RespawningMobs()
+    {
+        EnemyManager.Instance.enemies.Add(enemy);
+        Instantiate(enemy, EnemyManager.Instance.startRespawningMobsPoint);
+
+        yield return new WaitForSeconds(3f);
+    }
+
 
 
 

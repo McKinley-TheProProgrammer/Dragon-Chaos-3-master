@@ -21,6 +21,9 @@ TagManager:
   - ColissionInstruction
   - CaixadeTexto
   - FIM
+  - MobRespawner
+  - AtiradorInimigo
+  - Bullet
   layers:
   - Default
   - TransparentFX

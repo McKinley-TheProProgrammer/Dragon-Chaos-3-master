@@ -66,6 +66,10 @@ public class FollowTarget : MonoBehaviour
             {
                 transform.position = Vector2.MoveTowards(transform.position, seguirAlvo.position, -velocidade*Time.deltaTime);
             }
+            else
+            {
+                GetComponent<Animator>().SetBool("EnemySpotted", false);
+            }
         }
     }
 

@@ -87,6 +87,7 @@
     <Compile Include="Assets\Scripts\PocaoStamina.cs" />
     <Compile Include="Assets\Scripts\Pooling.cs" />
     <Compile Include="Assets\Scripts\RangeCheck.cs" />
+    <Compile Include="Assets\Scripts\RespawnMobs.cs" />
     <Compile Include="Assets\Scripts\SceneTransition.cs" />
     <Reference Include="Cinemachine">
       <HintPath>D:/_NOVO_NOTEBOOK_CAIO/Documents/GitHub/Dragon-Chaos-3-master/Jogo FINAL/Library/ScriptAssemblies/Cinemachine.dll</HintPath>

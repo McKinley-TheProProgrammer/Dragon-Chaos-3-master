@@ -5,10 +5,11 @@ using UnityEngine;
 public class EnemyManager : MonoBehaviour
 {
     public List<GameObject> enemies =  new List<GameObject>();
-    public Transform spawnEnemyPoint, enemyPoint;
+    public Transform spawnEnemyPoint, enemyPoint, startRespawningMobsPoint;
     static EnemyManager instance;
     public static EnemyManager Instance { get { return instance; } }
-
+    
+    
     public void Awake()
     {
         instance = this;
@@ -21,7 +22,7 @@ public class EnemyManager : MonoBehaviour
             enemies.Add(child.gameObject);
         }
     }
-
+    
     public void SetEnemyToSpawn()
     {
         for (int i = 0; i < enemyPoint.childCount; i++)
@@ -30,6 +31,9 @@ public class EnemyManager : MonoBehaviour
             enemyPoint.GetChild(i).position = spawnEnemyPoint.GetChild(i).position;
             enemyPoint.GetChild(i).gameObject.SetActive(true);
             enemyPoint.GetChild(i).gameObject.GetComponent<Renderer>().material.color = new Color(1.000f, 1.000f, 1.000f, 1.000f);
+            enemyPoint.GetChild(i).gameObject.GetComponent<Animator>().enabled = true;
+            //iTween.ColorTo(enemyPoint.GetChild(i).gameObject, new Color(0, 0, 0, 255), .5f);
         }
     }
+    
 }
