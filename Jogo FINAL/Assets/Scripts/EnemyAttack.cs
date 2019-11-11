@@ -28,6 +28,7 @@ public class EnemyAttack : MonoBehaviour
         if (ataque.CompareTag("Player") && (isInRangeLeft) && ataque.GetComponent<PlayerDamage>().imortal == false)
         {
             Debug.Log("Tei Matei");
+            GameManager.Instance.StopCoroutine("RespawningMobs");
             ataque.gameObject.SetActive(false);
             GameManager.Instance.Coroutine();
         }

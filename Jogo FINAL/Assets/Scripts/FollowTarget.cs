@@ -29,6 +29,13 @@ public class FollowTarget : MonoBehaviour
         flipa = GetComponent<SpriteRenderer>();
     }
 
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("ColisionDeath"))
+        {
+            gameObject.SetActive(false);
+        }
+    }
     // Update is called once per frame
     void Update()
     {

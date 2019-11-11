@@ -38,7 +38,7 @@ public class EnemyShooter : MonoBehaviour
             {
                 GameObject atual = Instantiate(projetil, quemAtira.position, Quaternion.identity);
                 ritmoDoTiro = 2;
-                Destroy(atual, 3);
+                //Destroy(atual, 2);
             }
             
         }

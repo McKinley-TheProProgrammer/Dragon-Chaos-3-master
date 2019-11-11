@@ -9,7 +9,7 @@ public class Bullet : MonoBehaviour
     int speed = 7;
     public GameObject player;
     public Transform posPlayer;
-    public Vector2 alvo;
+    public Vector3 alvo;
 
     private void Start()
     {
@@ -24,12 +24,21 @@ public class Bullet : MonoBehaviour
             DestroiBala();
             hit.gameObject.SetActive(false);
             GameManager.Instance.Coroutine();
+            GameManager.Instance.StopCoroutine("RespawningMobs");
+        }
+        else
+        {
+            DestroiBala();
         }
     }
     // Update is called once per frame
     void Update()
     {
         transform.position = Vector2.MoveTowards(transform.position, alvo, speed * Time.deltaTime);
+
+        Vector3 dir = transform.position - alvo;
+
+        transform.rotation = Quaternion.Euler(dir);
         if (transform.position.x == alvo.x && transform.position.y == alvo.y)
             DestroiBala();
     }

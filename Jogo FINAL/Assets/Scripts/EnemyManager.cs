@@ -28,9 +28,15 @@ public class EnemyManager : MonoBehaviour
         for (int i = 0; i < enemyPoint.childCount; i++)
         {
             //Debug.Log(i);
-            enemyPoint.GetChild(i).position = spawnEnemyPoint.GetChild(i).position;
+            if(spawnEnemyPoint.childCount >= spawnEnemyPoint.childCount)
+            {
+                enemyPoint.GetChild(i).position = spawnEnemyPoint.GetChild(Random.Range(0,spawnEnemyPoint.childCount)).position;
+            }else
+            {
+                enemyPoint.GetChild(i).position = spawnEnemyPoint.GetChild(i).position;
+            }
             enemyPoint.GetChild(i).gameObject.SetActive(true);
-            enemyPoint.GetChild(i).gameObject.GetComponent<Renderer>().material.color = new Color(1.000f, 1.000f, 1.000f, 1.000f);
+            iTween.ColorTo(transform.GetChild(i).gameObject, Color.white, .1f);
             enemyPoint.GetChild(i).gameObject.GetComponent<Animator>().enabled = true;
             //iTween.ColorTo(enemyPoint.GetChild(i).gameObject, new Color(0, 0, 0, 255), .5f);
         }

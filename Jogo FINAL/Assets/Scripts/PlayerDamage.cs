@@ -43,6 +43,7 @@ public class PlayerDamage : MonoBehaviour
         if (playerDies)
         {
             transform.position = GameManager.Instance.spawnPoint.position;
+            GameManager.Instance.StopCoroutine("RespawningMobs");
             EnemyManager.Instance.SetEnemyToSpawn();
             //playerDies.Coroutine();
             playerDies.SfxPlayer(death);
