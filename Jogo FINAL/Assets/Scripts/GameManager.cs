@@ -11,6 +11,7 @@ public class GameManager : MonoBehaviour
     public Transform spawnPoint,enemySpawnPoint;
     public GameObject[] camera;
     public GameObject enemy;
+    public Transform guardas;
 
     private void Awake()
     {
@@ -51,10 +52,13 @@ public class GameManager : MonoBehaviour
     }
     IEnumerator RespawningMobs()
     {
-        EnemyManager.Instance.enemies.Add(enemy);
-        Instantiate(enemy, EnemyManager.Instance.startRespawningMobsPoint);
-
-        yield return new WaitForSeconds(3f);
+        while (true)
+        {
+            EnemyManager.Instance.enemies.Add(enemy);
+            GameObject aux = Instantiate(enemy, EnemyManager.Instance.startRespawningMobsPoint);
+            aux.transform.SetParent(guardas);
+            yield return new WaitForSeconds(3f);
+        }
     }
 
 

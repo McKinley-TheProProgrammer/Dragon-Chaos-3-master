@@ -66,43 +66,43 @@
     <Compile Include="Assets\Plugins\Pixelplacement\iTween\Sample\SampleInfo.cs" />
     <None Include="Assets\Plugins\Pixelplacement\iTween\ReadMe!\ReadMe!.txt" />
     <Reference Include="Cinemachine">
-      <HintPath>D:/_NOVO_NOTEBOOK_CAIO/Documents/GitHub/Dragon-Chaos-3-master/Jogo FINAL/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
+      <HintPath>D:/_NOVO_NOTEBOOK_CAIO/Documents/GitHub/Dragon-Chaos-3-remaster-mapaNovo/Jogo FINAL/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.SpriteShape.Editor">
-      <HintPath>D:/_NOVO_NOTEBOOK_CAIO/Documents/GitHub/Dragon-Chaos-3-master/Jogo FINAL/Library/ScriptAssemblies/Unity.2D.SpriteShape.Editor.dll</HintPath>
+      <HintPath>D:/_NOVO_NOTEBOOK_CAIO/Documents/GitHub/Dragon-Chaos-3-remaster-mapaNovo/Jogo FINAL/Library/ScriptAssemblies/Unity.2D.SpriteShape.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>D:/_NOVO_NOTEBOOK_CAIO/Documents/GitHub/Dragon-Chaos-3-master/Jogo FINAL/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>D:/_NOVO_NOTEBOOK_CAIO/Documents/GitHub/Dragon-Chaos-3-remaster-mapaNovo/Jogo FINAL/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>D:/_NOVO_NOTEBOOK_CAIO/Documents/GitHub/Dragon-Chaos-3-master/Jogo FINAL/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+      <HintPath>D:/_NOVO_NOTEBOOK_CAIO/Documents/GitHub/Dragon-Chaos-3-remaster-mapaNovo/Jogo FINAL/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>D:/_NOVO_NOTEBOOK_CAIO/Documents/GitHub/Dragon-Chaos-3-master/Jogo FINAL/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>D:/_NOVO_NOTEBOOK_CAIO/Documents/GitHub/Dragon-Chaos-3-remaster-mapaNovo/Jogo FINAL/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.InternalAPIEngineBridge.001">
-      <HintPath>D:/_NOVO_NOTEBOOK_CAIO/Documents/GitHub/Dragon-Chaos-3-master/Jogo FINAL/Library/ScriptAssemblies/Unity.InternalAPIEngineBridge.001.dll</HintPath>
+      <HintPath>D:/_NOVO_NOTEBOOK_CAIO/Documents/GitHub/Dragon-Chaos-3-remaster-mapaNovo/Jogo FINAL/Library/ScriptAssemblies/Unity.InternalAPIEngineBridge.001.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Common.Runtime">
-      <HintPath>D:/_NOVO_NOTEBOOK_CAIO/Documents/GitHub/Dragon-Chaos-3-master/Jogo FINAL/Library/ScriptAssemblies/Unity.2D.Common.Runtime.dll</HintPath>
+      <HintPath>D:/_NOVO_NOTEBOOK_CAIO/Documents/GitHub/Dragon-Chaos-3-remaster-mapaNovo/Jogo FINAL/Library/ScriptAssemblies/Unity.2D.Common.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.SpriteShape.Runtime">
-      <HintPath>D:/_NOVO_NOTEBOOK_CAIO/Documents/GitHub/Dragon-Chaos-3-master/Jogo FINAL/Library/ScriptAssemblies/Unity.2D.SpriteShape.Runtime.dll</HintPath>
+      <HintPath>D:/_NOVO_NOTEBOOK_CAIO/Documents/GitHub/Dragon-Chaos-3-remaster-mapaNovo/Jogo FINAL/Library/ScriptAssemblies/Unity.2D.SpriteShape.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="com.unity.cinemachine.editor">
-      <HintPath>D:/_NOVO_NOTEBOOK_CAIO/Documents/GitHub/Dragon-Chaos-3-master/Jogo FINAL/Library/ScriptAssemblies/com.unity.cinemachine.editor.dll</HintPath>
+      <HintPath>D:/_NOVO_NOTEBOOK_CAIO/Documents/GitHub/Dragon-Chaos-3-remaster-mapaNovo/Jogo FINAL/Library/ScriptAssemblies/com.unity.cinemachine.editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>D:/_NOVO_NOTEBOOK_CAIO/Documents/GitHub/Dragon-Chaos-3-master/Jogo FINAL/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>D:/_NOVO_NOTEBOOK_CAIO/Documents/GitHub/Dragon-Chaos-3-remaster-mapaNovo/Jogo FINAL/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Common.Editor">
-      <HintPath>D:/_NOVO_NOTEBOOK_CAIO/Documents/GitHub/Dragon-Chaos-3-master/Jogo FINAL/Library/ScriptAssemblies/Unity.2D.Common.Editor.dll</HintPath>
+      <HintPath>D:/_NOVO_NOTEBOOK_CAIO/Documents/GitHub/Dragon-Chaos-3-remaster-mapaNovo/Jogo FINAL/Library/ScriptAssemblies/Unity.2D.Common.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.DataPrivacy">
-      <HintPath>D:/_NOVO_NOTEBOOK_CAIO/Documents/GitHub/Dragon-Chaos-3-master/Jogo FINAL/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
+      <HintPath>D:/_NOVO_NOTEBOOK_CAIO/Documents/GitHub/Dragon-Chaos-3-remaster-mapaNovo/Jogo FINAL/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
     </Reference>
     <Reference Include="Unity.InternalAPIEditorBridge.001">
-      <HintPath>D:/_NOVO_NOTEBOOK_CAIO/Documents/GitHub/Dragon-Chaos-3-master/Jogo FINAL/Library/ScriptAssemblies/Unity.InternalAPIEditorBridge.001.dll</HintPath>
+      <HintPath>D:/_NOVO_NOTEBOOK_CAIO/Documents/GitHub/Dragon-Chaos-3-remaster-mapaNovo/Jogo FINAL/Library/ScriptAssemblies/Unity.InternalAPIEditorBridge.001.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>D:/Program Files/2018.3.14f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -306,13 +306,13 @@
       <HintPath>D:/Program Files/2018.3.14f1/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Editor">
-      <HintPath>D:/_NOVO_NOTEBOOK_CAIO/Documents/GitHub/Dragon-Chaos-3-master/Jogo FINAL/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
+      <HintPath>D:/_NOVO_NOTEBOOK_CAIO/Documents/GitHub/Dragon-Chaos-3-remaster-mapaNovo/Jogo FINAL/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.StandardEvents">
-      <HintPath>D:/_NOVO_NOTEBOOK_CAIO/Documents/GitHub/Dragon-Chaos-3-master/Jogo FINAL/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
+      <HintPath>D:/_NOVO_NOTEBOOK_CAIO/Documents/GitHub/Dragon-Chaos-3-remaster-mapaNovo/Jogo FINAL/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Tracker">
-      <HintPath>D:/_NOVO_NOTEBOOK_CAIO/Documents/GitHub/Dragon-Chaos-3-master/Jogo FINAL/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
+      <HintPath>D:/_NOVO_NOTEBOOK_CAIO/Documents/GitHub/Dragon-Chaos-3-remaster-mapaNovo/Jogo FINAL/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>D:/Program Files/2018.3.14f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
